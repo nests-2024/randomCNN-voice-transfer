@@ -1,0 +1,6 @@
+pip
+scikit-image
+librosa
+soundfile
+matplotlib
+torch
