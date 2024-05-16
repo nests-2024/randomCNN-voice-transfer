@@ -161,7 +161,7 @@ def run_transfer(content_s, style_s,
     # Optimizer
     a_G_var = Variable(torch.randn(content_torch.shape) * 1e-3)
     a_G_var.requires_grad = True
-    optimizer = torch.optim.Adam([a_G_var])
+    optimizer = torch.optim.Adam([a_G_var], lr=learning_rate)
 
     print_every = int(num_steps / 20)
 
